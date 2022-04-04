@@ -74,6 +74,7 @@ impl AudioReceiver for Receiver {
         _timestamp: u32,
         _stereo: bool,
         data: &[i16],
+        _: usize,
     ) {
         self.0.lock().extend(data);
     }

@@ -87,4 +87,12 @@ impl AudioSource for Sender {
     fn read_opus_frame(&mut self) -> Option<Vec<u8>> {
         unimplemented!("Opus is not configured");
     }
+
+    fn decode_and_add_opus_frame(
+        &mut self,
+        float_buffer: &mut [f32; 1920],
+        volume: f32,
+    ) -> Option<usize> {
+        unimplemented!("Opus is not configured");
+    }
 }
